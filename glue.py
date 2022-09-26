@@ -14,7 +14,7 @@ last_name = None
 def start_gojam():
     global last_name
     os.system(
-        "docker run -d --name=gojam --network=host --rm --init gojam gojamclient --server 150.95.25.226:22124 --pcmout 127.0.0.1:28282 --apiserver 127.0.0.1:28281 --name 'Discord' --vad"
+        "docker run -d --name=gojam --network=host --rm --init gojam gojamclient --server 150.95.25.226:22124 --pcmout 127.0.0.1:28282 --apiserver 127.0.0.1:28281 --name ' Discord[]' --vad"
     )
     last_name = None
 

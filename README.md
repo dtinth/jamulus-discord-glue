@@ -11,3 +11,4 @@ The [glue code](https://en.wikipedia.org/wiki/Glue_code) between [gojam](https:/
 
 - When someone listens on the Discord channel, start streaming sound from Jamulus to Discord.
 - When no one is listening on the Discord channel, stop streaming.
+- While streaming is active, chat messages will be relayed from Jamulus to Discord and vice versa.
