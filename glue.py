@@ -7,7 +7,7 @@ from sqlitedict import SqliteDict
 load_dotenv()
 
 db = SqliteDict("/tmp/jamchatbridge.sqlite", autocommit=True)
-
+webhook_url = os.environ["DISCORD_WEBHOOK_URL"]
 last_name = None
 
 
@@ -124,7 +124,6 @@ while True:
                     "content": text,
                     "username": name + " (Jamulus)",
                 }
-                webhook_url = os.environ["DISCORD_WEBHOOK_URL"]
                 r = requests.post(
                     webhook_url,
                     json=body,
